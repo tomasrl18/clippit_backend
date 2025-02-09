@@ -10,6 +10,6 @@ class NoteAdmin(admin.ModelAdmin):
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('title', 'completed', 'due_date', 'user')
+    list_display = ('title', 'completed', 'due_date', 'frequency', 'user')
     #search_fields = ('title', 'description')
     #list_filter = ('completed', 'due_date')

@@ -15,6 +15,7 @@ class Task(models.Model):
     description = models.TextField(blank=True)
     completed = models.BooleanField(default=False)
     due_date = models.DateField(null=True, blank=True)
+    frequency = models.CharField(max_length=200, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
